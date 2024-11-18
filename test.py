@@ -1,4 +1,4 @@
-from main import Tree
+from tree import Tree
 
 # Create a tree
 tree = Tree()
@@ -20,3 +20,11 @@ print(len(tree))  # Should print: 7
 print(3 in tree)  # Should print: True
 print(tree[0])    # Should print: 1 (smallest element)
 print(tree[-1])   # Should print: 7 (largest element)
+
+tree2 = Tree()
+
+tree2.insert(1)
+tree2.insert(2)
+tree2.insert(3)
+
+print(tree2)      # Should print: (-)
