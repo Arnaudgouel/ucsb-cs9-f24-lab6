@@ -28,3 +28,18 @@ tree2.insert(2)
 tree2.insert(3)
 
 print(tree2)      # Should print: (-)
+
+# test also clear
+print(tree.clear()) # Should print: 7
+
+#test also non valid input for index
+try:
+    print(tree[0.1])
+except TypeError:
+    print("TypeError")
+
+#test also non valid index
+try:
+    print(tree[20])
+except IndexError:
+    print("IndexError")
